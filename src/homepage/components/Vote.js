@@ -1,4 +1,3 @@
-import { useEffect } from "react";
 import { callApi } from "../../lib/dummyAPI";
 import React from "react";
 
@@ -29,16 +28,16 @@ const sendState = async (coin, price, action) => {
 
 const VoteForm = (props) => {
 	return (
-		<div className="block bg-slate-800 text-slate-50 rounded-lg font-bold text-xl m-20 px-40 py-20 sm:justify-center">
-			<div className="flex items-center">
+		<div className="block bg-slate-800 text-slate-50 rounded-lg font-bold text-xl sm:justify-center">
+			<div className="flex items-center mt-4">
 				<div className="flex-1 w-full text-center">
 					<p>
 						{props.coin.name}::{props.coin.price} USD
 					</p>
 				</div>
 			</div>
-			<div className="flex justify-center mt-5 space-x-4">
-				<div className="w-1/2">
+			<div className="grid grid-cols-1 grid-rows-2 grid-flow-col gap-2 mt-2 mb-4">
+				<div className="flex justify-center">
 					<button
 						type="button"
 						onClick={() =>
@@ -50,7 +49,7 @@ const VoteForm = (props) => {
 						</p>
 					</button>
 				</div>
-				<div className="w-1/2">
+				<div className="flex justify-center">
 					<button
 						type="button"
 						onClick={() =>
@@ -72,7 +71,7 @@ const Vote = () => {
 
 	var Forms = prices.map((coin) => <VoteForm key={coin.name} coin={coin} />);
 
-	return <div>{Forms}</div>;
+	return <div className="grid grid-cols-1 sm:grid-cols-4 grid-rows-4 sm:grid-rows-1 grid-flow-col gap-5">{Forms}</div>;
 };
 
 export default Vote;

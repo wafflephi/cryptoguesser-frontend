@@ -1,15 +1,11 @@
 import Header from "../../shared/components/Header";
-import BigButton from "../../shared/components/BigButton";
 import React from "react";
 
 const Hero = () => {
 	return (
 		<>
-			<div className="text-center w-full my-20">
-				<Header fontSize={"text-8xl"}>CryptoGuess</Header>
-				<BigButton>
-					<a href="/about">What is it?</a>
-				</BigButton>
+			<div className="text-center w-full my-2 mt-2">
+				<Header fontSize={"text-5xl sm:text-7xl"}>CryptoGuess</Header>
 			</div>
 		</>
 	);

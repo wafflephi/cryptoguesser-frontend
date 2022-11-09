@@ -2,7 +2,7 @@ import React from "react";
 
 const Navbar = (props) => {
 	const dirs = [
-		["Vote", "/"],
+		["Guess", "/"],
 		["About", "/about"],
 		["GitHub", "#"],
 	];
@@ -18,7 +18,7 @@ const Navbar = (props) => {
 	));
 
 	return (
-		<nav className="flex sm:justify-center mt-10">
+		<nav className="flex sm:justify-center mb-10">
 			<ul>{NavBarElements}</ul>
 		</nav>
 	);
