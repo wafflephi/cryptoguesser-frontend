@@ -2,8 +2,6 @@ import React from "react";
 
 const Navbar = (props) => {
 	const dirs = [
-		["Guess", "/"],
-		["About", "/about"],
 		["GitHub", "#"],
 	];
 

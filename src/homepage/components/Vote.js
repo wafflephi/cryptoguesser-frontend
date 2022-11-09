@@ -32,7 +32,7 @@ const VoteForm = (props) => {
 			<div className="flex items-center mt-4">
 				<div className="flex-1 w-full text-center">
 					<p>
-						{props.coin.name}::{props.coin.price} USD
+						{props.coin.name}: {props.coin.price} USD
 					</p>
 				</div>
 			</div>
@@ -44,7 +44,7 @@ const VoteForm = (props) => {
 							sendState(props.coin.name, props.coin.price, "buy")
 						}
 					>
-						<p className={"rounded-md px-3 py-2 bg-green-800"}>
+						<p className={"text-lg rounded-md px-3 py-2 bg-green-800"}>
 							Buy/Long
 						</p>
 					</button>
@@ -56,7 +56,7 @@ const VoteForm = (props) => {
 							sendState(props.coin.name, props.coin.price, "sell")
 						}
 					>
-						<p className={"rounded-md px-3 py-2 bg-red-800"}>
+						<p className={"text-lg rounded-md px-3 py-2 bg-red-800"}>
 							Sell/Short
 						</p>
 					</button>
