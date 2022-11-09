@@ -18,7 +18,7 @@ And to simulate server deployment run: `npx serve -d build`
 
 ## API:
 
-The API returns an array of objects that corespond to the todays cryptocurrencies
+The API returns an array of objects that corespond to the today's cryptocurrencies
 
 As of the time of writing in order to submit result of the user, the frontend needs to authenticate as temporary user or admin.
 
