@@ -1,5 +1,6 @@
-import Header from "../../shared/components/Header";
 import React from "react";
+
+import Header from "../../shared/components/Header";
 
 const Hero = () => {
 	return (

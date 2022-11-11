@@ -1,7 +1,8 @@
+import React from "react";
+
 import Navbar from "../shared/components/Navbar";
 import Hero from "./components/Hero";
 import Vote from "./components/Vote";
-import React from "react";
 
 const Homepage = () => {
 	return (
